@@ -1,0 +1,47 @@
+body {
+    background-color: lightsalmon;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: rgb(255, 0, 38);
+    font-family: Algerian, sans-serif;
+}
+
+h2 {
+    color: green;
+    font-family: Georgia, serif;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 20px;
+}
+/* styles.css */
+.img-map {
+    float: right;
+    width: 700px;
+    height: 800px;
+    margin-top: 1px;
+    margin-left: 20px;
+    border: 2px dashed black;
+}
+

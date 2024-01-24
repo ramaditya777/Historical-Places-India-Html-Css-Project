@@ -1,0 +1,41 @@
+/* odisha.css */
+
+body {
+    background-color: powderblue;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: blue;
+    font-family: Algerian, sans-serif;
+}
+
+h2 {
+    color: green;
+    font-family: Georgia, serif;
+}
+
+p {
+    font-size: 100%;
+    color: blue;
+    font-family: Georgia, serif;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.place-image {
+    width: 440px;
+    height: 290px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}

@@ -1,0 +1,42 @@
+/* up.css */
+
+body {
+    background-color: yellow;
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: green;
+}
+
+h3 {
+    color: red;
+}
+
+p {
+    font-size: 100%;
+    color: blue;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.place-image {
+    width: 420px;
+    height: 281px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
