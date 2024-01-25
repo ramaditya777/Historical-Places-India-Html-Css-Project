@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c8e6c9;
+    background-color: #c5cae9;
 }
 
 h1 {
     text-align: center;
-    color: #2e7d32;
+    color: #311b92;
 }
 
 ul {
@@ -24,13 +24,13 @@ li {
 
 a {
     text-decoration: none;
-    color: #d84315;
+    color: #4caf50;
     font-weight: bold;
     font-size: 16px;
 }
 
 a:hover {
-    color: #bf360c;
+    color: #1b5e20;
 }
 
 section {
@@ -38,22 +38,4 @@ section {
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    color: #2e7d32;
-}
-
-section p {
-    color: #2e7d32;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
-}
+    box-shadow

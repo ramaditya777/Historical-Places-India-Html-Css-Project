@@ -1,4 +1,4 @@
-/* Delhi.css */
+/* Delhi.css
 
 body {
     background-color: powderblue;
@@ -32,6 +32,65 @@ a:hover {
     color: red;
     background-color: transparent;
     text-decoration: underline;
-}
+} */
 
 /* Add other CSS styles as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9e8b2;
+}
+
+h1 {
+    text-align: center;
+    color: #6d4c41;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #2196f3;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #0d47a1;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #6d4c41;
+}
+
+section p {
+    color: #6d4c41;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
