@@ -38,4 +38,5 @@ section {
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
-    box-shadow
+    box-shadow :none
+}

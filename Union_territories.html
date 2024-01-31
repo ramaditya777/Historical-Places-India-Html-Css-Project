@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in India - Union Territories</title>
+    <link rel="stylesheet" type="text/css" href="Union_territories.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Visit the Union Territory</h2>
+        <ul id="territoryList">
+            <!-- List of union territories will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script>
+        // Define an array of Union Territories with their details
+        const unionTerritories = [
+            { name: "Andaman and Nicobar Islands", mapLink: "andaman_nicobar.html", wikipediaLink: "Andaman_and_Nicobar_Islands" },
+            { name: "Chandigarh", mapLink: "chandigarh.html", wikipediaLink: "Chandigarh" },
+            { name: "Dadra and Nagar Haveli and Daman and Diu", mapLink: "dadra_nagar_haveli_daman_diu.html", wikipediaLink: "Dadra_and_Nagar_Haveli_and_Daman_and_Diu" },
+            { name: "Delhi", mapLink: "Delhi.html", wikipediaLink: "Delhi" },
+            { name: "Lakshadweep", mapLink: "lakshadweep.html", wikipediaLink: "Lakshadweep" },
+            { name: "Puducherry", mapLink: "puducherry.html", wikipediaLink: "Puducherry" },
+            // Add more territories as needed
+        ];
+
+        // Function to dynamically create buttons for Map and Wikipedia
+        function createButtons(state) {
+            const mapButton = `<button onclick="goToMap('${state.mapLink}')">Visit</button>`;
+            const wikipediaButton = `<button onclick="goToWikipedia('${state.wikipediaLink}')">Wikipedia</button>`;
+            return mapButton + wikipediaButton;
+        }
+
+        // Function to append Union Territory list items to the page
+        function appendTerritories() {
+            const territoryList = document.getElementById("territoryList");
+
+            unionTerritories.forEach(territory => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<span>${territory.name}</span> ${createButtons(territory)}`;
+                territoryList.appendChild(listItem);
+            });
+        }
+
+        // Function to redirect to the map page
+        function goToMap(mapLink) {
+            window.location.href = mapLink;
+        }
+
+        // Function to open the Wikipedia page in a new tab
+        function goToWikipedia(placeName) {
+            // You can customize this link with the appropriate Wikipedia URL or content
+            window.open(`https://en.wikipedia.org/wiki/${placeName}`, "_blank");
+        }
+
+        // Call the function to append Union Territory list items to the page
+        appendTerritories();
+    </script>
+</body>
+</html>
+
+
+
+
+
+                                <!--Part -0-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in India - Union Territories</title>
+    <link rel="stylesheet" type="text/css" href="Union_territories.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Visit the Union Territory</h2>
+        <ul>
+             List of union territories -->
+           <!-- <li><a href="andaman_nicobar.html">Andaman and Nicobar Islands</a></li>
+              <li><a href="chandigarh.html">Chandigarh</a></li>
+              <li><a href="dadra_nagar_haveli_daman_diu.html">Dadra and Nagar Haveli and Daman and Diu</a></li>
+              <li><a href="Delhi.html">Delhi</a></li>
+              <li><a href="lakshadweep.html">Lakshadweep</a></li>
+              <li><a href="puducherry.html">Puducherry</a></li>
+            Add your union territory links here -->
+       <!-- </ul>
+    </div>
+</body>
+</html> -->
+
+
+                                <!-- Part 1-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in India - Union Territories</title>
+    <link rel="stylesheet" type="text/css" href="Union_territories.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Visit the Union Territory</h2>
+        <ul>
+            List of union territories -->
+            <!-- <li>
+                <span>Andaman and Nicobar Islands</span>
+                <button onclick="goToMap('andaman_nicobar.html')">Map</button>
+                <button onclick="goToWikipedia('Andaman_and_Nicobar_Islands')">Wikipedia</button>
+            </li>
+             Repeat for other union territories -->
+        <!-- </ul>
+    </div>
+
+    <script>
+        function goToMap(mapLink) {
+            window.location.href = mapLink;
+        }
+
+        function goToWikipedia(placeName) {
+            // You can customize this link with the appropriate Wikipedia URL or content
+            window.open("https://en.wikipedia.org/wiki/" + placeName, "_blank");
+        }
+    </script>
+</body>
+</html> -->
+                                <!-- Part 2-->
+<!--                                 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in India - Union Territories</title>
+    <link rel="stylesheet" type="text/css" href="Union_territories.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Visit the Union Territory</h2>
+        <ul id="territoryList">
+            List of union territories will be dynamically added here -->
+       <!--  </ul>
+    </div>
+
+    <script>
+        // Define an array of Union Territories with their details
+        const unionTerritories = [
+            { name: "Andaman and Nicobar Islands", mapLink: "andaman_nicobar.html", wikipediaLink: "Andaman_and_Nicobar_Islands" },
+            { name: "Chandigarh", mapLink: "chandigarh.html", wikipediaLink: "Chandigarh" },
+            // Add more territories as needed
+        ];
+
+        // Function to dynamically create buttons for Map and Wikipedia
+        function createButtons(state) {
+            const mapButton = document.createElement("button");
+            mapButton.textContent = "Map";
+            mapButton.onclick = () => goToMap(state.mapLink);
+
+            const wikipediaButton = document.createElement("button");
+            wikipediaButton.textContent = "Wikipedia";
+            wikipediaButton.onclick = () => goToWikipedia(state.wikipediaLink);
+
+            return [mapButton, wikipediaButton];
+        }
+
+        // Function to append Union Territory list items to the page
+        function appendTerritories() {
+            const territoryList = document.getElementById("territoryList");
+
+            unionTerritories.forEach(territory => {
+                const listItem = document.createElement("li");
+                const territoryName = document.createElement("span");
+                territoryName.textContent = territory.name;
+
+                const buttons = createButtons(territory);
+                buttons.forEach(button => listItem.appendChild(button));
+
+                listItem.appendChild(territoryName);
+                territoryList.appendChild(listItem);
+            });
+        }
+
+        // Function to redirect to the map page
+        function goToMap(mapLink) {
+            window.location.href = mapLink;
+        }
+
+        // Function to open the Wikipedia page in a new tab
+        function goToWikipedia(placeName) {
+            // You can customize this link with the appropriate Wikipedia URL or content
+            window.open("https://en.wikipedia.org/wiki/" + placeName, "_blank");
+        }
+
+        // Call the function to append Union Territory list items to the page
+        appendTerritories();
+    </script>
+</body>
+</html> -->
+                <!-- Part -3 -->
