@@ -1,3 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in India - States</title>
+    <link rel="stylesheet" type="text/css" href="State.css">
+</head>
+
+<body>
+    <header>
+        <h1>Historical Places in India - States</h1>
+        <p>Explore the rich history and culture of different states in India</p>
+    </header>
+
+    <div class="container">
+        <h2>Visit the State</h2>
+        <ul id="stateList">
+            <!-- List of states will be dynamically added here -->
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Historical Places Project</p>
+    </footer>
+
+    <script>
+        // Define an array of States with their details
+        const states = [
+        { name: "Andhra Pradesh", mapLink: "andhra_pradesh.html", wikipediaLink: "Andhra_Pradesh" },
+                    { name: "Arunachal Pradesh", mapLink: "arunachal_pradesh.html", wikipediaLink: "Arunachal_Pradesh" },
+                    { name: "Assam", mapLink: "assam.html", wikipediaLink: "Assam" },
+                    { name: "Bihar", mapLink: "bihar.html", wikipediaLink: "Bihar" },
+                    { name: "Chhattisgarh", mapLink: "chhattisgarh.html", wikipediaLink: "Chhattisgarh" },
+                    { name: "Goa", mapLink: "goa.html", wikipediaLink: "Goa" },
+                    { name: "Gujarat", mapLink: "gujarat.html", wikipediaLink: "Gujarat" },
+                    { name: "Haryana", mapLink: "haryana.html", wikipediaLink: "Haryana" },
+                    { name: "Himachal Pradesh", mapLink: "himachal_pradesh.html", wikipediaLink: "Himachal_Pradesh" },
+                    { name: "Jammu and Kashmir", mapLink: "jammu_kashmir.html", wikipediaLink: "Jammu_and_Kashmir" },
+                    { name: "Jharkhand", mapLink: "jharkhand.html", wikipediaLink: "Jharkhand" },
+                    { name: "Karnataka", mapLink: "karnataka.html", wikipediaLink: "Karnataka" },
+                    { name: "Kerala", mapLink: "kerala.html", wikipediaLink: "Kerala" },
+                    { name: "Madhya Pradesh", mapLink: "madhya_pradesh.html", wikipediaLink: "Madhya_Pradesh" },
+                    { name: "Maharashtra", mapLink: "maharashtra.html", wikipediaLink: "Maharashtra" },
+                    { name: "Manipur", mapLink: "manipur.html", wikipediaLink: "Manipur" },
+                    { name: "Meghalaya", mapLink: "meghalaya.html", wikipediaLink: "Meghalaya" },
+                    { name: "Mizoram", mapLink: "mizoram.html", wikipediaLink: "Mizoram" },
+                    { name: "Nagaland", mapLink: "nagaland.html", wikipediaLink: "Nagaland" },
+                    { name: "Odisha", mapLink: "odisha.html", wikipediaLink: "Odisha" },
+                    { name: "Punjab", mapLink: "punjab.html", wikipediaLink: "Punjab" },
+                    { name: "Rajasthan", mapLink: "rajasthan.html", wikipediaLink: "Rajasthan" },
+                    { name: "Sikkim", mapLink: "sikkim.html", wikipediaLink: "Sikkim" },
+                    { name: "Tamil Nadu", mapLink: "tamil_nadu.html", wikipediaLink: "Tamil_Nadu" },
+                    { name: "Telangana", mapLink: "telangana.html", wikipediaLink: "Telangana" },
+                    { name: "Tripura", mapLink: "tripura.html", wikipediaLink: "Tripura" },
+                    { name: "Uttar Pradesh", mapLink: "up.html", wikipediaLink: "Uttar_Pradesh" },
+                    { name: "Uttarakhand", mapLink: "uttarakhand.html", wikipediaLink: "Uttarakhand" },
+                    { name: "West Bengal", mapLink: "west_bengal.html", wikipediaLink: "West_Bengal" }
+                ];
+
+        // Function to dynamically create buttons for Map and Wikipedia
+        function createButtons(state) {
+            const mapButton = `<button onclick="goToMap('${state.mapLink}')">Visit</button>`;
+            const wikipediaButton = `<button onclick="goToWikipedia('${state.wikipediaLink}')">Wikipedia</button>`;
+            return mapButton + wikipediaButton;
+        }
+
+        // Function to append State list items to the page
+        function appendStates() {
+            const stateList = document.getElementById("stateList");
+
+            states.forEach(state => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<span>${state.name}</span> ${createButtons(state)}`;
+                stateList.appendChild(listItem);
+            });
+        }
+
+        // Function to redirect to the map page
+        function goToMap(mapLink) {
+            window.location.href = mapLink;
+        }
+
+        // Function to open the Wikipedia page in a new tab
+        function goToWikipedia(placeName) {
+            // You can customize this link with the appropriate Wikipedia URL or content
+            window.open(`https://en.wikipedia.org/wiki/${placeName}`, "_blank");
+        }
+
+        // Call the function to append State list items to the page
+        appendStates();
+    </script>
+</body>
+
+</html>
+
+<!-- ======================================================================= 
 
  <!DOCTYPE html>
 <html lang="en">
@@ -11,8 +109,8 @@
     <div class="container">
         <h2>Visit the State</h2>
         <ul id="stateList">
-            <!-- List of states will be dynamically added here -->
-        </ul>
+             List of states will be dynamically added here -->
+       <!-- </ul>
     </div>
 
     <script>
@@ -83,9 +181,9 @@
     </script>
 </body>
 </html>
-
-
-<!-- <!DOCTYPE html>
+-->
+<!-- ======================================================================= 
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
